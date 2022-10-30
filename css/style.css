@@ -1,0 +1,170 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    background: #f1f1f1;
+    font-family: 'Merriweather', sans-serif;
+    padding: 1em;
+}
+
+h1 {
+    text-align: center;
+    color: #332c2c;
+    text-shadow: 1px 1px 0 white;
+}
+
+form {
+    max-width: 600px;
+    padding: 1em;
+    text-align: center;
+    margin: 20px auto;
+    -webkit-border-radius: 11px 11px 0px 0px;
+    border-radius: 11px 11px 0px 0px;
+    -webkit-box-shadow: -8px 5px 9px 9px rgba(64, 65, 63, 0.74); 
+    box-shadow: -8px 5px 9px 9px rgba(64, 65, 63, 0.74);
+}
+
+form .text-center {
+    color: #332c2c;
+    text-shadow: 1px 1px 0 white;
+    font-size: 10px;
+    letter-spacing: 0.4px;
+    word-spacing: -0.8px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+form .result {
+    padding: 1em;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+    font-size: 10px;
+    color: #332c2c;
+    text-shadow: 1px 1px 0 white;
+    letter-spacing: 2.0px;
+    word-spacing: 0.4px;
+    font-weight: 400;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: uppercase;
+    background: #FFFFFD;
+    background: -moz-linear-gradient(left, #FFFFFD 0%, #EEEFEF 100%);
+    background: -webkit-linear-gradient(left, #FFFFFD 0%, #EEEFEF 100%);
+    background: linear-gradient(to right, #FFFFFD 0%, #EEEFEF 100%);
+
+}
+
+form input {
+    margin-bottom: 3px;
+    border: 0;
+    outline: 0;
+    text-align: center;
+    padding: 1em;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    font-size: 10px;
+    color: #332c2c;
+    text-shadow: 1px 1px 0 white;
+    letter-spacing: 2.0px;
+    word-spacing: 0.4px;
+    font-weight: 400;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: uppercase;
+    margin-top: 1em;
+    font-family: 'Merriweather', sans-serif;
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    resize: none;
+}
+
+form input:focus, form textarea:focus {
+    -moz-box-shadow: 0 0px 2px #e74c3c !important;
+    -webkit-box-shadow: 0 0px 2px #e74c3c !important;
+    box-shadow: 0 0px 2px #e74c3c !important;
+}
+
+form .btnConv {
+    color: white;
+    background: #E74C3C;
+    background: -moz-linear-gradient(left, #E74C3C 0%, #68CB33 7%, #E74C3C 100%);
+    background: -webkit-linear-gradient(left, #E74C3C 0%, #68CB33 7%, #E74C3C 100%);
+    background: linear-gradient(to right, #E74C3C 0%, #68CB33 7%, #E74C3C 100%);
+    cursor: pointer;
+}
+
+form .btnConv:hover {
+    background: #FFFF13;
+    background: -moz-linear-gradient(left, #FFFF13 0%, #CB2F0D 48%, #DFEF89 100%);
+    background: -webkit-linear-gradient(left, #FFFF13 0%, #CB2F0D 48%, #DFEF89 100%);
+    background: linear-gradient(to right, #FFFF13 0%, #CB2F0D 48%, #DFEF89 100%);
+  }
+  
+form .btnConv:active {
+    background: #90FFF0;
+    background: -moz-linear-gradient(45deg, #90FFF0 0%, #54A2CB 7%, #E09AEF 100%);
+    background: -webkit-linear-gradient(45deg, #90FFF0 0%, #54A2CB 7%, #E09AEF 100%);
+    background: linear-gradient(45deg, #90FFF0 0%, #54A2CB 7%, #E09AEF 100%);
+}
+
+form textarea {
+  height: 126px;
+}
+
+.half {
+  float: left;
+  width: 45%;
+  margin-bottom: 1em;
+}
+
+
+.right {
+  width: 50%;
+  margin-left: 1em;
+}
+
+.left {
+  margin-right: 2%;
+}
+
+/* Responsiveness */
+@media (max-width: 480px) {
+  .half {
+    width: 100%;
+    float: none;
+    margin-bottom: 0;
+  }
+}
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
